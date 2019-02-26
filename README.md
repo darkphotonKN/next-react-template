@@ -1,1 +1,1 @@
-# next-teact-template
+# next-react-template
