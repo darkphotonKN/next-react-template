@@ -9,6 +9,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="zh-tw">
         <Head>
+          {/* For IE11 */}
           <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.23.0/polyfill.min.js" />
 
           {/* NProgress for Loaders, Spinners, Progress Bars */}
@@ -24,11 +25,6 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
 
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/static/mobile/css/style-mobile.css"
-          />
           {/* Activates when JS is off - for Accessibility (無障礙),
               Basically attaches accessibility.css in non-JS environemtns. */}
           <noscript>
@@ -79,13 +75,7 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
 
-          <script src="/static/mobile/js/modernizr.custom.js" />
-          <script src="/static/mobile/js/classie.js" />
-          {/* <script src="/static/mobile/js/mobile-menu.js" /> */}
-
           <script src="/static/js/bootstrap/bootstrap.min.js" />
-          <script src="/static/mobile/js/modernizr.custom.js" />
-          <script src="/static/mobile/js/classie.js" />
         </body>
       </html>
     );

@@ -9,7 +9,6 @@
   },
   "scripts": {
     "dev": "next -p 3001",
-    "start:dev": "node app/server.js",
     "build": "NODE_ENV=production next build",
     "start": "NODE_ENV=production node ./app/server.js",
     "heroku-postbuild": "./node_modules/next/dist/bin/next build"
