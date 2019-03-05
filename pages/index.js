@@ -7,7 +7,7 @@ import env from '../config/env.config';
 class Index extends Component {
   render() {
     /* Main Website */
-    return <Layout />;
+    return <Layout>Blank App</Layout>;
   }
 }
 
